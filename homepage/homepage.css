@@ -1,0 +1,175 @@
+.logo-text{
+    
+    font-family: Open Sans;
+    font-size: 48.32px;
+    font-weight: 400;
+    color: white;
+    margin-left: 28px;
+    margin-bottom: 25px;
+    
+    
+}
+
+nav{
+    a{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: left;
+        color: white;
+        display: flex;
+        height: 52px;
+        align-items: center;
+        gap: 25px;
+        text-decoration: none;
+        padding-left: 28px;
+        padding-right: 110px;
+    }
+}
+
+/* right */
+
+
+.account{
+    display: flex;  
+    /* width: 80vw; */
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+   
+    p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        color: #073763;
+
+    }
+}
+
+.account-parametrs-text{
+    width: 70vw;
+    text-align: center;
+    p{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+#profile-photo{
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+}
+
+.div-color{
+    background-color: #073763;
+    height: 36px;
+    width: 100%;
+}
+
+
+/* nav-js */
+
+.nav{
+    display: none;
+    position: absolute;
+    top: 73px;
+    background-color: white;
+    width: 200px;
+    height: 126px;
+
+    a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+        margin-left: 8px;
+        margin-top: 15px;
+    }
+}
+
+.nav.active{
+    display: block;
+}
+
+/* form */
+
+.form-div{
+    display: flex;
+    /* width: 80vw; */
+    justify-content: space-between;
+}
+
+.form{
+    margin-left: 28px;
+}
+
+.labels{
+    display: inline-block;
+    width: fit-content;
+
+    p{
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 21.79px;
+        /* text-align: left; */
+        width: 150px;
+        /* width: fit-content; */
+
+    }
+}
+
+.inputs{
+    display: block;
+    width: 250px;
+}
+input{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 250px;
+    margin-top: 17px !important;
+}
+
+.user-parametrs, .password-changing{
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+p.user-parametrs-text, p.password-changing-text{
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: left;
+    }
+    
+    .line{
+        width: 520px;
+        height: 1px;
+        background-color: black;
+    }
+    
+    .man-photo{
+        width: 315px;
+        height: 315px;
+        margin: 28px 28px 0 0;
+    }
+
+    .man-photo img{
+        width: 100%;
+    }
+
+.edit-icon, .delete-icon{
+    cursor: pointer;
+}
+
