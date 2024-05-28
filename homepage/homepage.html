@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="/global.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
     <div class="container">
@@ -29,9 +30,13 @@
             </div>
         </div>
 
+        <div class="red-color" style="display:none; background-color: red; width: 500px; height: 20px;"></div>
 
         <div class="right">
             <div class="account">
+                <div class="hamburger-icon-div" style="align-items: center; justify-content: center; margin-left: 28px;">
+                    <i class="fa-solid fa-bars fa-xl" id="hamburger-icon" onclick=""></i>
+                </div>
                 <div class="account-parametrs-text">
                     <p>Hesab Parametrləri</p>
                 </div>
@@ -41,7 +46,7 @@
                     <p style="display: flex; gap: 10px; width: 150px;" id="profile-name">Əliyev Fərid <img src="/public/profile-photo-vector.svg" alt=""></p>
             
                     <div class="navigation" id="menu" style="z-index: 1;">
-                            <a href="">Hesab parametrləri</a>
+                            <a href="/homepage/homepage.html">Hesab parametrləri</a>
                             <a href="/general-parametrs/general-parametrs.html">Ümumi parametrlər</a>
                             <a href="">Hesabdan çıxış</a>
                     </div>
@@ -50,18 +55,83 @@
 
             <div class="div-color"></div>
 
-            <div class="form-div">
-                <div class="form">
+            <div class="navbar" style="display: none; flex-direction: column;z-index: 9;">
+                <div style="display: flex; flex-direction: column;">
+                    <a href="/homepage/homepage.html">Ana Səhifə</a>
+                    <a href="/human-resources/human-resources.html">İnsan Resursları</a>
+                    <a href="/sale/sales.html">Satışlar</a>
+                    <a href="/accounting/accounting.html">Mühasibat</a>
+                    <a href="#">Statistika</a>
+                    <a href="#">Tapşırıqlar</a>
+                </div>
+            </div>
 
-                    <div class="user-parametrs">
-                        <img src="/public/user-parametrs.svg" alt="">
-                        <p class="user-parametrs-text">İstifadəçi parametrləri</p>
-                    </div>
+                <div class="form">    
+                                
+                    <div class="form-div" style="display: flex; width: 100%; justify-content: space-between;">
+                    <div style="display: flex; flex-direction: column;">
+                        <div class="user-parametrs-wrapper">
+                            <div  class="user-parametrs">
+                                <img src="/public/user-parametrs.svg" alt="">
+                                <p class="user-parametrs-text">İstifadəçi parametrləri</p>
+                            </div>
+                            <div class="line"></div>
+                        </div>
+                        <div id="labels">
+                            <div style="display: flex;">
+                                <label for="">Ad Soyad Ata ad</label>
+                                <input type="text" placeholder="Əliyev Fərid Kərim" >
+                            </div>
+            
+                            <div style="display: flex;">
+                              <label for="">İstifadəçi Adı</label>
+                              <input type="text" placeholder="farid_02">
+                            </div>
+            
+                            <div style="display: flex;">
+                                <label for="">Tel.nömrəsi 1</label>
+                                <input type="number" placeholder="+994702545666">
+                            </div>
+            
+                            <div style="display: flex;">
+                                <label for="">Tel.nömrəsi 2</label>
+                                <input type="number" placeholder="+994772215646">
+                            </div>
+            
+                            <div style="display: flex;"> 
+                                <label for="">E-poçt</label>
+                                <input type="text" placeholder="aliyef_farid@gmail.com">
+                            </div>
+            
+                            <div style="display: flex;">
+                                <label for="">Vəzifə</label>
+                                <select>
+                                  <option value="" disabled selected>Operator</option>
+                                  <option value="Müştəri">Müştəri</option>
+                                </select>
+                            </div>
+                          </div>
 
-                    <div class="line"></div>
+                            <div class="password-changing">
+                                <img src="/public/password-change.svg" alt="">
+                                <p class="password-changing-text">Şifrə dəyişmək</p>
+                            </div>
 
-                    <div style="display: flex; gap: 115px;">
-                    <div class="labels">
+                            <div class="line"></div>
+                          
+                          <div id="labels">
+                            <div style="display: flex;">
+                                <label for="">Yeni şifrə</label>
+                                <input type="number" placeholder="+994702545666">
+                            </div>
+                            <div style="display: flex;">
+                                <label for="">Yeni şifrə təkrarla</label>
+                                <input type="number" placeholder="+994702545666">
+                            </div>
+                          </div>
+                        </div>
+
+                    <!-- <div class="labels">
                         <label>Ad Soyad Ata ad</label>
                         <label>İstifadəçi Adı</label>
                         <label>Tel.nömrəsi 1</label>
@@ -97,9 +167,9 @@
                                 <input type="password" >
                             </div>
                             </div>
-                    </div>
+                    </div> -->
 
-                </div>
+
 
                 <div class="man-photo">
                     <div style="position: relative;">
@@ -119,13 +189,13 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
             
             <div class="buttons-div">
                 <button class="go-back">Geri qayıt</button>
                 <button class="save">Yadda saxla</button>
             </div>
-        </div>
     </div>
 
     <script>
@@ -147,5 +217,6 @@
 
     <script src="/app.js"></script>
     <script src="/nav.js"></script>
+    <script src="/show-menu.js"></script>
 </body>
 </html>

@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="sales.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
     <style>
         table, th, td {
@@ -38,16 +39,19 @@
 
         <div class="right">
             <div class="account">
+                <div class="hamburger-icon-div" style="align-items: center; justify-content: center; margin-left: 28px;">
+                    <i class="fa-solid fa-bars fa-xl" id="hamburger-icon"></i>
+                </div>
                 <div class="account-parametrs-text">
                     <p>Satışlar/Mürabəhə müqaviləsi</p>
                 </div>
-
+    
                 <div class="profile">
                     <img src="/public/profile-photo.svg" id="profile-photo" alt="">
                     <p style="display: flex; gap: 10px; width: 150px;" id="profile-name">Əliyev Fərid <img src="/public/profile-photo-vector.svg" alt=""></p>
             
                     <div class="navigation" id="menu" style="z-index: 1;">
-                            <a href="">Hesab parametrləri</a>
+                            <a href="/homepage/homepage.html">Hesab parametrləri</a>
                             <a href="/general-parametrs/general-parametrs.html">Ümumi parametrlər</a>
                             <a href="">Hesabdan çıxış</a>
                     </div>
@@ -56,9 +60,20 @@
 
             <div class="div-color"></div>
 
-            <div id="form">
+            <div class="navbar" style="display: none; flex-direction: column;z-index: 9;">
+                <div style="display: flex; flex-direction: column;">
+                    <a href="/homepage/homepage.html">Ana Səhifə</a>
+                    <a href="/human-resources/human-resources.html">İnsan Resursları</a>
+                    <a href="/sale/sales.html">Satışlar</a>
+                    <a href="/accounting/accounting.html">Mühasibat</a>
+                    <a href="#">Statistika</a>
+                    <a href="#">Tapşırıqlar</a>
+                </div>
+            </div>
 
-                <div id="labels">
+            <div class="form">
+
+                <!-- <div id="labels">
                     <div style="display: flex;">
                         <label for="">Müqavilə tarixi:</label>
                         <p>26.08.2024</p>
@@ -100,6 +115,44 @@
                             <option value=""></option>
                         </select>
                     </div>
+                </div> -->
+                <div id="labels" style="width: 420px;">
+                    <div style="display: flex;">
+                        <label for="">Müqavilə tarixi:</label>
+                        <p>26.08.2024</p>
+                    </div>
+
+                    <div style="display: flex;">
+                        <label for="">Müqavilə növü:</label>
+                        <p>Vədəli satış</p>
+                    </div>
+
+                    <div style="display: flex;">
+                        <label for="">Müştəri:</label>
+                        <p>Nicat Yusifov</p>
+                    </div>
+
+                    <div style="display: flex;">
+                        <label for="">Müştəri tel:</label>
+                        <p>050 344 45 54</p>
+                    </div>
+
+                    <div style="display: flex;">
+                        <label for="">Kəfil tel:</label>
+                        <p>055 560 65 34</p>
+                    </div>
+
+                    <div style="display: flex;">
+                        <label for="">İcraçı:</label>
+                        <p>Vəli Kərimli</p>
+                    </div>
+                    
+                    <div style="display: flex;">
+                        <label for="">Kreditor:</label>
+                        <select id="contract-status">
+                            <option value=""></option>
+                        </select>
+                    </div> 
                 </div>
 
                 <div id="labels">
@@ -242,5 +295,9 @@
                     </tbody>
                   </table>
                 </div>
+
+<script src="/show-menu.js"></script>
+<script src="/nav.js"></script>
+<script src="/app.js"></script>
 </body>
 </html>

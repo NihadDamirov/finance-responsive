@@ -86,6 +86,10 @@ select:focus{
     font-weight: 400;
 }
 
+.label-div{
+    gap: 80px;
+}
+
 .inputs{
     margin-top: 17px;
 }
@@ -126,3 +130,14 @@ select:focus{
     width: 100%;
 }
 
+#labels label{
+    font-weight: 400 !important;
+}
+
+@media only screen and (max-width: 1050px) {
+    .right{
+        width: 700px;
+        justify-content: center;
+        margin:  0 auto;
+    }
+}

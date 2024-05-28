@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/global.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/accounting/accounting-balance/accounting-balance.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+    <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="menu">
+                <div>
+                    <h1 class="logo-text">Logo</h1>
+                </div>
+
+                <div>
+                    <nav>
+                        <a href="/homepage/homepage.html"><img src="/public/home-page-icon.png" alt="" > Ana Səhifə</a>
+                        <a href="/human-resources/human-resources.html"><img src="/public/resources-icon.png" alt="">İnsan Resursları</a>
+                        <a href="/sale/sales.html"><img src="/public/sale-icon.png" alt="">Satışlar</a>
+                        <a href="/accounting/accounting.html"><img src="/public/accounting-icon.png" alt="">Mühasibat</a>
+                        <a href="/statistic/statistic.html"><img src="/public/statistics.png" alt="">Statistika</a>
+                        <a href="/exercises/exercises.html"><img src="/public/exercises-icon.png" alt="">Tapşırıqlar</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="account">
+                <div class="hamburger-icon-div" style="align-items: center; justify-content: center; margin-left: 28px;">
+                    <i class="fa-solid fa-bars fa-xl" id="hamburger-icon"></i>
+                </div>
+                <div class="account-parametrs-text">
+                    <p>Mühasibat/Balans</p>
+                </div>
+    
+                <div class="profile">
+                    <img src="/public/profile-photo.svg" id="profile-photo" alt="">
+                    <p style="display: flex; gap: 10px; width: 150px;" id="profile-name">Əliyev Fərid <img src="/public/profile-photo-vector.svg" alt=""></p>
+            
+                    <div class="navigation" id="menu" style="z-index: 1;">
+                            <a href="/homepage/homepage.html">Hesab parametrləri</a>
+                            <a href="/general-parametrs/general-parametrs.html">Ümumi parametrlər</a>
+                            <a href="">Hesabdan çıxış</a>
+                    </div>
+                </div>
+              </div>
+
+            <div class="div-color">Əmək Haqqı | Kredit ödəmə izləmə | Kassa Hərəkətləri | Xərc növləri | Balans | Cərimə</div>
+
+            <div class="navbar" style="display: none; flex-direction: column;z-index: 9;">
+                <div style="display: flex; flex-direction: column;">
+                    <a href="/homepage/homepage.html">Ana Səhifə</a>
+                    <a href="/human-resources/human-resources.html">İnsan Resursları</a>
+                    <a href="/sale/sales.html">Satışlar</a>
+                    <a href="/accounting/accounting.html">Mühasibat</a>
+                    <a href="#">Statistika</a>
+                    <a href="#">Tapşırıqlar</a>
+                </div>
+            </div>
+
+            <div style="display: flex;">
+          
+            <div>
+              <div class="table">
+
+                <div class="accounting-tables" style=" display: flex; gap: 65px;">
+                <div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                        <button class="add">Əlavə et</button>
+                        <h3 class="activities">Aktivliklər</h3>
+                    </div>
+                 <table>
+                    <thead>
+                        <tr class="table-header">
+                            <th class="column-one">Hesab №</th>
+                            <th class="column-two">Hesab</th>
+                            <th class="column-three">Məbləğ</th>
+                          </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Kassa</td>
+                            <td>39500</td>
+                        </tr>
+                        <tr>
+                            <td>1.1</td>
+                            <td>AZN</td>
+                            <td>11120</td>
+                        </tr>
+                        <tr>
+                            <td>1.2</td>
+                            <td>USD</td>
+                            <td>10000</td>
+                        </tr>
+                        <tr>
+                            <td>1.3</td>
+                            <td>Qızıl</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>1.4</td>
+                            <td>Blok. məbləğ</td>
+                            <td>2880</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Alacaqlar</td>
+                            <td>15000</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Ticarət Malları</td>
+                            <td>500</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Cəmi</td>
+                            <td>39500</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                </div>
+
+                <div>
+                    <div style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                        <button class="add-passive">Əlavə et</button>
+                        <h3 class="passive">Passiv</h3>
+                    </div>
+                <table>
+                    <thead>
+                        <tr class="table-header">
+                            <th class="column-one">Hesab №</th>
+                            <th class="column-two">Hesab</th>
+                            <th class="column-three">Məbləğ</th>
+                          </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>5</td>
+                            <td>Şəriklər</td>
+                            <td>322.40</td>
+                        </tr>
+                        <tr>
+                            <td>5.1</td>
+                            <td>Adil finans</td>
+                            <td>40.00</td>
+                        </tr>
+                        <tr>
+                            <td>5.1.1</td>
+                            <td>Şirkət bölünməmiş mənfəət</td>
+                            <td>1500</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Hövzə</td>
+                            <td>4.889.60</td>
+                        </tr>
+                        <tr>
+                            <td>6.1</td>
+                            <td>Ömər</td>
+                            <td>2.200.00</td>
+                        </tr>
+                        <tr>
+                            <td>6.2</td>
+                            <td>Zeyd</td>
+                            <td>2.200.00</td>
+                        </tr>
+                        <tr>
+                            <td>6.3</td>
+                            <td>Hövzə bölünməmiş mənfəət</td>
+                            <td>489.60</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>İnvestorlar</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Kommisiya</td>
+                            <td>68.00</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Cəmi</td>
+                            <td>5.280.00</td>
+                        </tr>
+                    </tbody>
+                </table>  
+                </div>
+
+                <div style="display: flex; flex-direction: column; justify-content: space-between;" class="red-circle-div">
+                    <div class="red-circle"></div>
+                    <div style="display: flex; flex-direction: column; gap: 44px;">
+                    <div>
+                        <div style="display: flex; flex-direction: row; align-items: center;"><span style="font-weight: 500;">7.1</span><p class="accounting-paragraph">VS0001 invest hovuzu</p></div>
+                        <div style="display: flex; flex-direction: row; align-items: center;"><span style="font-weight: 500;">7.1.1</span><p class="accounting-paragraph">VS0001 invest hovuzu</p></div>
+                        <div style="display: flex; flex-direction: row; align-items: center;"><span style="font-weight: 500;">7.1.2</span><p class="accounting-paragraph">VS0001 invest hovuzu</p></div>
+                    </div>
+                    <div>
+                        <div style="display: flex; flex-direction: row; align-items: center;"><span style="font-weight: 500;">7.2</span><p class="accounting-paragraph">VS0001 invest hovuzu</p></div>
+                        <div style="display: flex; flex-direction: row; align-items: center;"><span style="font-weight: 500;">7.2.1</span><p class="accounting-paragraph">VS0001 invest hovuzu</p></div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+              </div>
+
+              <div>
+                <div class="blur">
+                <div class="labels">
+                    <div class="close-icon-div">
+                        <img src="/public/close-icon.svg" class="close-icon" alt="">
+                    </div>
+
+                    <div class="input-and-label">
+                    <div style="display: flex;">
+                        <label for="">Hesab</label>
+                        <input type="text">
+                    </div>
+
+                    <div style="display: flex;">
+                        <label for="">Hesab adı</label>
+                        <input type="text">
+                    </div>
+
+                    <div style="display: flex;">
+                        <label for="">Məbləğ</label>
+                        <input type="number">
+                    </div>
+                    </div>
+
+                    <div class="give-up-add-buttons">
+                        <button id="give-up-btn">İmtina et</button>
+                        <button id="add-btn">Əlavə et</button>
+                    </div>
+                </div>
+
+                <div class="labels-passive">
+                    <div class="close-icon-div">
+                        <img src="/public/close-icon.svg" class="close-icon-passive" alt="">
+                    </div>
+
+                    <div class="input-and-label">
+                    <div style="display: flex;">
+                        <label for="">Hövzə</label>
+                        <input type="checkbox" class="checkbox" checked>
+                    </div>
+                    <div style="display: flex;">
+                        <label for="">Hesab</label>
+                        <input type="text">
+                    </div>
+
+                    <div style="display: flex;">
+                        <label for="">Hesab adı</label>
+                        <input type="text">
+                    </div>
+
+                    <div style="display: flex;">
+                        <label for="">Məbləğ</label>
+                        <input type="number">
+                    </div>
+                    
+                    <div style="display: flex;">
+                        <label for="">Hövzənin hissə payı %</label>
+                        <input type="number">
+                    </div>
+                    </div>
+
+                    <div class="give-up-add-buttons">
+                        <button id="give-up-btn">İmtina et</button>
+                        <button id="add-btn">Əlavə et</button>
+                    </div>
+                </div>
+                </div>
+              </div>
+        </div>
+<script src="/app.js"></script>
+<script src="/add-activities.js"></script>
+</body>
+</html>

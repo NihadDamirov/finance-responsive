@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/sale/sale-contracts/sale-contracts.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <title>Document</title>
     <style>
         table, th, td {
@@ -38,28 +39,42 @@
         </div>
 
         <div class="right">
-            <div class="account">
-                <div class="account-parametrs-text">
-                    <p>Satışlar/Müqavilələr</p>
-                </div>
-
-                <div class="profile">
-                    <img src="/public/profile-photo.svg" id="profile-photo" alt="">
-                    <p style="display: flex; gap: 10px; width: 150px;" id="profile-name">Əliyev Fərid <img src="/public/profile-photo-vector.svg" alt=""></p>
-            
-                    <div class="navigation" id="menu" style="z-index: 1;">
-                            <a href="">Hesab parametrləri</a>
-                            <a href="/general-parametrs/general-parametrs.html">Ümumi parametrlər</a>
-                            <a href="">Hesabdan çıxış</a>
-                    </div>
-                </div>
+          <div class="account">
+            <div class="hamburger-icon-div" style="align-items: center; justify-content: center; margin-left: 28px;">
+                <i class="fa-solid fa-bars fa-xl" id="hamburger-icon"></i>
+            </div>
+            <div class="account-parametrs-text">
+                <p>Satışlar/Müqavilələr</p>
             </div>
 
-            <div class="div-color"></div>
+            <div class="profile">
+                <img src="/public/profile-photo.svg" id="profile-photo" alt="">
+                <p style="display: flex; gap: 10px; width: 150px;" id="profile-name">Əliyev Fərid <img src="/public/profile-photo-vector.svg" alt=""></p>
+        
+                <div class="navigation" id="menu" style="z-index: 1;">
+                        <a href="/homepage/homepage.html">Hesab parametrləri</a>
+                        <a href="/general-parametrs/general-parametrs.html">Ümumi parametrlər</a>
+                        <a href="">Hesabdan çıxış</a>
+                </div>
+            </div>
+          </div>
 
-            <div style="display: flex;">
+            <div class="div-color">Müqavilələr | İstifadəçilər</div>
+
+            <div class="navbar" style="display: none; flex-direction: column;z-index: 9;">
+              <div style="display: flex; flex-direction: column;">
+                  <a href="/homepage/homepage.html">Ana Səhifə</a>
+                  <a href="/human-resources/human-resources.html">İnsan Resursları</a>
+                  <a href="/sale/sales.html">Satışlar</a>
+                  <a href="/accounting/accounting.html">Mühasibat</a>
+                  <a href="#">Statistika</a>
+                  <a href="#">Tapşırıqlar</a>
+              </div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between" class="contracts">
           
-            <div>
+            <div class="form">
               <div class="table">
                 <table>
                     <thead>
@@ -144,7 +159,7 @@
                             </tr>
                             <tr>
                               <td class="checkbox-column"><input type="checkbox" style="width: 20px;"></td>
-                              <td></td>
+                              <td>205</td>
                               <td>Əliyev Fərid Kərim</td>
                               <td></td>
                               <td></td>
@@ -212,8 +227,13 @@
                 </div>
 
                   <div class="pagination">
-                    <a href="#" class="page-links"></a>
-                    <a href="#" class="page-links"></a>
+                    <a href="#" class="page-links">
+                      <img src="/public/vertical-icon-line.svg" alt="">
+                      <img src="/public/left-icon.svg"  style="margin-left: 1px;"  alt="">
+                    </a>
+                    <a href="#" class="page-links">
+                      <img src="/public/left-icon.svg"  alt="">
+                    </a>
                     <a href="#" class="page-links">1</a>
                     <a href="#" class="page-links">2</a>
                     <a href="#" class="page-links">3</a>
@@ -223,8 +243,13 @@
                     <a href="#" class="page-links">8</a>
                     <a href="#" class="page-links">9</a>
                     <a href="#" class="page-links">10</a>
-                    <a href="#" class="page-links"></a>
-                    <a href="#" class="page-links"></a>
+                    <a href="#" class="page-links">
+                      <img src="/public/right-icon.svg" alt="">
+                    </a>
+                    <a href="#" class="page-links">
+                      <img src="/public/right-icon.svg" alt="">
+                      <img src="/public/vertical-icon-line.svg"  style="margin-left: 2px;"  alt="">
+                    </a>
                   </div>
                 </div>
 
@@ -255,5 +280,8 @@
                 </div>
               </div>
         </div>
+
+        <script src="/show-menu.js"></script>
+        <script src="/app.js"></script>
 </body>
 </html>

@@ -9,38 +9,16 @@ input.checkbox-column{
 }
 
 th,td.checkbox-column{
-    width: 52px;
+    /* width: 52px; */
     height: 52px;
 }
 
-.column-one{
-    width: 68px;
-}
-
-.column-two, .column-three,.column-four{
-    width: 176px;
-}
-
-.column-five{
-    width: 118px;
-}
-
-.column-six{
-    width: 113px;
-}
-
-.column-seven{
-    width: 154px;
-}
-
-.column-eight{
-    width: 212px;
-}
 
 th{
     font-family: Open Sans;
     font-size: 16px;
     font-weight: 600;
+    padding: 0 45px;
 }
 
 tr td{
@@ -70,7 +48,7 @@ tr td{
 }
 
 .div-color-gray{
-    width: 800px;
+        /* width: 800px; */
     background-color: rgba(135, 157, 172, 1);
     height: 16px;
     margin-top: 14px;
@@ -165,4 +143,34 @@ ul{
         font-weight: 400;
         color: #BDBDBD;
     }
+}
+
+
+@media only screen and (max-width: 1050px) {
+    .contracts{
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .table-header th, th, tr td{
+        font-size: 14px;
+    }
+
+    #name-surname{
+        /* width: 100%; */
+        margin-left: 0;
+        /* padding-left: 25px; BU HISSSƏNİ NƏZƏRƏ AL!!! */
+    }
+
+    .pagination{
+        justify-content: center;
+        margin-top: 28px;
+        
+        .page-links{
+            width: 21px;
+            height: 21px;
+        }
+    }
+
 }

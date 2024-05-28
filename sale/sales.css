@@ -1,4 +1,4 @@
-.column-one{
+/* .column-one{
     width: 112px;
 }
 
@@ -28,7 +28,7 @@
 
 .column-eight{
     width: 92px;
-}
+} */
 
 
 
@@ -45,6 +45,7 @@
 
 .table{
     margin-left: 28px;
+    margin-top: 50px;
 }
 
 thead{
@@ -62,19 +63,27 @@ th, tr{
     text-align: center;
     color: #000;
     height: 54px;
+    padding: 0 30px;
 }
 
 
 /* Form */
 
-#form{
+.form{
     display: flex;
-    width: 950px;
-    justify-content: space-between;
+    /* width: 950px; */
+    justify-content: flex-start;
+    gap: 150px;
     flex-wrap: wrap;
     margin-bottom: 75px;
     margin-left: 28px;
 }
+
+.form{
+    margin: 28px 0 0 28px
+}
+
+
 
 #labels{
 
@@ -116,3 +125,39 @@ th, tr{
     border: none;
 }
 
+
+@media only screen and (max-width: 1050px) {
+    #form{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .table-header th, th, tr td{
+        font-size: 14px;
+    }
+
+    table{
+        margin: 0 auto;
+    }
+    .table{
+        margin-left: 0;
+    }
+
+    .right{
+        width: 700px;
+       margin:  0 auto;
+    }
+
+    th,tr{
+        padding: 0 15px
+    }
+
+    label{
+        margin-left: 0
+    }
+    #name-surname{
+        /* width: 100%; */
+        margin-left: 0;
+        /* padding-left: 25px; BU HISSSƏNİ NƏZƏRƏ AL!!! */
+    }
+}

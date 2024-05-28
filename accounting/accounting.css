@@ -1,0 +1,246 @@
+input.checkbox-column{
+    /* width: 20px !important; */
+    border: 5px solid black;
+    border-radius: none;
+}
+
+.table{
+    margin: 28px 0 0 28px;
+}
+
+th,td.checkbox-column{
+    width: 52px;
+    height: 52px;
+}
+
+.column-one{
+    /* width: 68px; */
+}
+
+.column-two, .column-three,.column-four{
+    /* width: 176px; */
+    /* width: fit-content; */
+}
+
+.column-five{
+    /* width: 118px; */
+    /* width: fit-content; */
+}
+
+.column-six{
+    /* width: 113px; */
+    /* width: fit-content; */
+}
+
+.column-seven{
+    /* width: 154px; */
+    /* width: fit-content; */
+}
+
+.column-eight{
+    /* width: 212px; */
+    /* width: fit-content; */
+}
+
+th{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 600;
+    width: fit-content;
+    padding: 0 35px;
+}
+
+tr td{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.last-line{
+    height: 85px;
+    border: 1px solid black
+}
+
+.total-number-of-employees{
+    text-align: left; 
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.one-hundred-seventy-eight{
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.div-color-gray{
+    width: 800px;
+    background-color: rgba(135, 157, 172, 1);
+    height: 16px;
+    margin-top: 14px;
+    margin-left: 12px;
+}
+
+.pagination{
+    display: flex;
+    gap: 11px;
+    margin: 28px 0 0 28px;
+}
+
+.page-links{
+    width: 42px;
+    height: 42px;
+    background: #0000000D;
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #00000033;
+    border-radius: 4px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+    color: #07376359;
+}
+
+.search-comprehensively{
+    display: flex;
+    flex-direction: column;
+    width: 290px;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-comprehensively input{
+    width: 234px !important;
+    border-bottom: 1px solid#BDBDBD;
+}
+
+input::placeholder{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+    color: #BDBDBD;
+}
+
+input:focus{
+    outline: none;
+}
+
+
+.clear-btn{
+    width: 120px;
+    height: 37px;
+    border-radius: 32px;
+    background-color: #EFBF3A;
+    box-shadow: -1px 1px 2px 0px #00000080;
+    border: none;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+
+}
+
+h3{
+    font-family: Montserrat ;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h4{
+    font-family: Open Sans;
+    font-size: 19px;
+    font-weight: 400;
+
+}
+
+ul{
+    margin-left: -40px;
+    li{
+        list-style: none;
+        margin-right: 50px;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        color: #BDBDBD;
+    }
+}
+
+.buttons{
+    margin-top: 20px    ;
+}
+
+.avans{
+    background-color: #98B0C7;
+    border-radius: 32px;
+    padding: 9px 35px 9px 35px;
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    width: 164px;
+    height: 37px;
+}
+
+.pay-wages{
+    background-color: #98B0C7;
+    border-radius: 32px;
+    padding: 9px 35px 9px 35px;
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 14px;
+    font-weight: 400;
+    border: none;
+    width: 125px;
+    height: 37px;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    th,tr{
+        font-size: 12px;
+        padding: 0 15px;
+        margin: 0;
+    }
+
+    .table{
+        margin: 28px 0 0 0;
+    }
+    .form{
+        flex-direction: column;
+        align-items: center;
+        gap: 100px ;
+        padding: 0;
+    }
+
+    
+
+    .div-color-gray{
+        width: 50px;
+    }
+
+    .last-line-div{
+        flex-direction: column;
+    }
+
+    .pagination{
+        justify-content: center;
+        .page-links{
+            width: 21px;
+            height: 21px;
+        }
+    }
+
+
+    
+}

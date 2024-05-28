@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/global.css">
     <link rel="stylesheet" href="general-parametrs.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
     .image-button {
         background-image: url('/public/edit-icon.svg');
@@ -41,23 +42,37 @@
         
         <div class="right">
             <div class="account">
-                <div class="account-parametrs-text">
-                    <p>İnsan Resursları / İşçi Daxil Et</p>
+                <div class="hamburger-icon-div" style="align-items: center; justify-content: center; margin-left: 28px;">
+                    <i class="fa-solid fa-bars fa-xl" id="hamburger-icon"></i>
                 </div>
-
+                <div class="account-parametrs-text">
+                    <p>Ümumi Parametrlər</p>
+                </div>
+    
                 <div class="profile">
                     <img src="/public/profile-photo.svg" id="profile-photo" alt="">
                     <p style="display: flex; gap: 10px; width: 150px;" id="profile-name">Əliyev Fərid <img src="/public/profile-photo-vector.svg" alt=""></p>
             
                     <div class="navigation" id="menu" style="z-index: 1;">
-                            <a href="">Hesab parametrləri</a>
+                            <a href="/homepage/homepage.html">Hesab parametrləri</a>
                             <a href="/general-parametrs/general-parametrs.html">Ümumi parametrlər</a>
                             <a href="">Hesabdan çıxış</a>
                     </div>
                 </div>
-        </div>
+            </div>
 
         <div class="div-color"></div>
+
+        <div class="navbar" style="display: none; flex-direction: column;z-index: 9;">
+            <div style="display: flex; flex-direction: column;">
+                <a href="/homepage/homepage.html">Ana Səhifə</a>
+                <a href="/human-resources/human-resources.html">İnsan Resursları</a>
+                <a href="/sale/sales.html">Satışlar</a>
+                <a href="/accounting/accounting.html">Mühasibat</a>
+                <a href="#">Statistika</a>
+                <a href="#">Tapşırıqlar</a>
+            </div>
+        </div>
 
         <div class="form-div">
             <div class="form">
@@ -102,8 +117,57 @@
                     <div class="line"></div>
 
 
-                    <div style="display: flex; gap: 59px;" class="relations">
-                    <div class="labels">
+                    <div style="display: flex; gap: 59px; margin: 0;" class="relations">
+
+                        <div id="labels">
+                            <div class="label-div" style="display: flex;">
+                                <label for="">İllik mənfəət %</label>
+                                <input type="number">
+                            </div>
+            
+                            <div class="label-div" style="display: flex;">
+                              <label for="">Gecikmə Cəriməsi %</label>
+                              <input type="number">
+                            </div>
+            
+                            <div class="label-div" style="display: flex;">
+                                <label for="">Hövzədə İnvestor payı (%)</label>
+                                <div style="display: flex;">
+                                <input type="number"  style="width: 125px;" />
+                                
+                                <div style="display: flex; gap: 0;">
+                                    <p style="margin: 0 14px 0 8px;">interval</p>
+                                    <select style="width: 46px;">
+                                        <option value="" disabled selected></option>
+                                        <option value="#1">#1</option>
+                                        <option value="#2">#2</option>
+                                        <option value="#3">#3</option>
+                                    </select>
+                                </div>
+                                </div>
+                            </div>
+            
+                            <div class="label-div" style="display: flex;">
+                                <label for="">Hövzədə şirkət payı (%)</label>
+                                <input type="number" />
+                            </div>
+            
+                            <div class="label-div" style="display: flex;"> 
+                                <label for="">Şirkət şərikləri</label>
+                                <select>
+                                    <option value="" disabled selected></option>
+                                    <option value="#1">#1</option>
+                                    <option value="#2">#2</option>
+                                    <option value="#3">#3</option>
+                                </select>
+                            </div>
+            
+                            <div class="label-div" style="display: flex;">
+                                <label for="">Şirkətdəki payı (%)</label>
+                                <input type="email">
+                            </div>
+                          </div>
+                    <!-- <div class="labels">
                         <div>
                             <label>İllik mənfəət %</label>
                             <label>Gecikmə Cəriməsi %</label>
@@ -120,9 +184,9 @@
                             <label>Şirkət şərikləri</label>
                             <label>Şirkətdəki payı (%)</label>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="inputs">
+                    <!-- <div class="inputs">
                         <div>
                             <input type="number">
                             <input type="number">
@@ -147,7 +211,7 @@
                                 <option value="Müştəri">Müştəri</option>
                             </select>
                         </div>
-                    </div>
+                    </div> -->
                     
                     </div>
                 </div>
@@ -244,5 +308,6 @@
     <script src="/app.js"></script>
     <script src="/nav.js"></script>
     <script src="color-picker.js"></script>
+    <script src="/show-menu.js"></script>
 </body>
 </html>

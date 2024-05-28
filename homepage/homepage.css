@@ -107,10 +107,11 @@ nav{
     /* width: 80vw; */
     justify-content: space-between;
 }
-
 .form{
-    margin-left: 28px;
+    margin: 28px 0 0 28px
 }
+
+
 
 .labels{
     display: inline-block;
@@ -145,6 +146,14 @@ input{
     gap: 22px;
 }
 
+.user-parametrs-wrapper{
+
+}
+
+#labels{
+    margin-bottom:28px;
+}
+
 p.user-parametrs-text, p.password-changing-text{
     font-family: 'Segoe UI';
     font-size: 16px;
@@ -154,7 +163,7 @@ p.user-parametrs-text, p.password-changing-text{
     }
     
     .line{
-        width: 520px;
+        width: 440px !important;
         height: 1px;
         background-color: black;
     }
@@ -171,5 +180,35 @@ p.user-parametrs-text, p.password-changing-text{
 
 .edit-icon, .delete-icon{
     cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 1050px) {
+    
+
+    #name-surname{
+        width: 100%;
+        margin-left: 0;
+        /* padding-left: 25px; BU HISSSƏNİ NƏZƏRƏ AL!!! */
+    }
+
+   
+
+    .form{
+        align-items: center;
+        justify-content: center;
+        }
+
+    .user-parametrs-wrapper{
+        width: 100%;
+        align-self: center;
+        justify-content: center;
+    }
+
+    .buttons-div{
+        margin-top: 100px !important;
+        margin-left: 20px;
+    }
 }
 
