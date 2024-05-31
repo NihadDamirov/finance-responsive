@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" rel="stylesheet"/>
     <title>Document</title>
     <style>
         table, th, td {
@@ -263,13 +264,38 @@
                 <div style="width: 290px; box-shadow: -5px 0px 15px 5px #0000000D; height: 984px; margin-left: 28px;">
                   <h3 style="text-align: center;">Ətraflı axtar</h3>
                 <div class="search-comprehensively">
-                  <input type="search" placeholder="Istifadəçi adı axtar">
-                  <input type="text" placeholder="Müqavilə növü">
-                  <input type="text" placeholder="Şəhər">
-                  <input type="text" placeholder="Vəkalət">
-                  <input type="text" placeholder="Kəfalət">
-                  <input type="text" placeholder="Tarix">
-                  <input type="text" placeholder="Müqavilə statusu">
+                  <input type="search" class="search-icon" placeholder="Əməkdaş axtar">
+                  <div class="select-container">
+                    <select id="search" >
+                      <option class="option" value="Vəzifə">Vəzifə</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                    <span style="margin-left: -30px;" class="clear-icon">
+                      <img src="/public/close-icon.svg" width="18px" alt="Clear Icon" class="close-icon">
+                    </span>
+                    <span class="dropdown-icon">
+                      <img src="/public/dropdown-icon.svg" width="12px" alt="Clear Icon" class="dropdown-icon">
+                    </span>
+                  </div>
+                  <div class="select-container">
+                    <select id="search" >
+                      <option value="Vəzifə">Ə/H statusu</option>
+                      <option value="1">Option 1</option>
+                      <option value="2">Option 2</option>
+                      <option value="3">Option 3</option>
+                    </select>
+                    <span style="margin-left: -30px;" class="clear-icon">
+                      <img src="/public/close-icon.svg" width="18px" alt="Clear Icon" class="close-icon">
+                    </span>
+                    <span class="dropdown-icon">
+                      <img src="/public/dropdown-icon.svg" width="12px" alt="Clear Icon" class="dropdown-icon">
+                    </span>
+                  </div>
+                  <input type="text" class="x-icon" placeholder="Satış sayı">
+                  <input type="text" id="date-input" class="date-input x-icon" placeholder="Başlanğıc tarixi">
+                  <input type="text" class="x-icon" placeholder="Son tarix">
 
                   <div style="width: 100%; display: flex; justify-content: end; margin:41px 25px 0 0 ;">
                     <button class="clear-btn">Təmizlə</button>
@@ -288,8 +314,8 @@
               </div>
         </div>
 
+<script src="/app.js"></script>
 <script src="/show-menu.js"></script>
 <script src="/nav.js"></script>
-<script src="/app.js"></script>
 </body>
 </html>

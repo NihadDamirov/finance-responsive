@@ -31,7 +31,9 @@
 } */
 
 
-
+.left{
+    height: auto;
+}
 
 .table-header th{
     background-color: #073763;
@@ -125,6 +127,45 @@ th, tr{
     border: none;
 }
 
+.sale-buttons{
+    display: flex;
+    justify-content: end;
+    margin: 50px 28px 28px 0;
+}
+
+.sale-buttons-wrapper{
+    display: flex;
+    gap: 21px;
+
+    button{
+        border-radius: 32px;
+        height: 37px;
+        padding: 9px 28px 9px 28px;
+        border: none;
+        color: #fff;
+        box-shadow: -1px 1px 2px 0px #00000080;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 400;
+
+
+    }
+    
+    .go-back{
+        width: 119px;
+    }
+
+    .download-pdf{
+        background-color: #25619A;
+    }
+    .cancel{
+        background-color: #F44336;
+    }
+    .pay{
+        background-color: #BFBFBF;
+    }
+}
+
 
 @media only screen and (max-width: 1050px) {
     #form{
@@ -159,5 +200,9 @@ th, tr{
         /* width: 100%; */
         margin-left: 0;
         /* padding-left: 25px; BU HISSSƏNİ NƏZƏRƏ AL!!! */
+    }
+
+    .sale-buttons{
+        justify-content: center;
     }
 }

@@ -120,6 +120,7 @@ tr td{
 .search-comprehensively input{
     width: 234px !important;
     border-bottom: 1px solid#BDBDBD;
+    height: 28px;
 }
 
 input::placeholder{
@@ -203,6 +204,47 @@ ul{
     border: none;
     width: 125px;
     height: 37px;
+}
+
+#search{
+    width: 234px;
+    margin-left: 9px !important;
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+}
+.search-icon{
+    background: url("/public/search-icon.svg") no-repeat right;
+    background-size: 18px;  
+}
+
+.x-icon{
+    background: url("/public/close-icon.svg") no-repeat right;
+    background-size: 18px;  
+}
+
+input.x-icon{
+    width: ;
+} 
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    color: #BDBDBD;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.close-icon{
+    margin-left: -12px;
+}
+
+.dropdown-icon{
+    margin-left: 5.4px !important;
+    margin-bottom: 3px;
 }
 
 @media only screen and (max-width: 1050px) {

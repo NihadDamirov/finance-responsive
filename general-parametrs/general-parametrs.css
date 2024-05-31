@@ -130,6 +130,13 @@ select:focus{
     width: 100%;
 }
 
+
+.labels{
+    label{
+        margin: 0;
+    }
+}
+
 #labels label{
     font-weight: 400 !important;
 }
@@ -139,5 +146,12 @@ select:focus{
         width: 700px;
         justify-content: center;
         margin:  0 auto;
+    }
+
+    #show-logo-img-div{
+        top: 900px;
+        display: flex;
+        transform: translateX(-45%);
+        padding-bottom: 20px;
     }
 }

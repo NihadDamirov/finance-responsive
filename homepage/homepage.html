@@ -55,7 +55,7 @@
 
             <div class="div-color"></div>
 
-            <div class="navbar" style="display: none; flex-direction: column;z-index: 9;">
+            <div class="navbar" style="flex-direction: column;z-index: 9;">
                 <div style="display: flex; flex-direction: column;">
                     <a href="/homepage/homepage.html">Ana Səhifə</a>
                     <a href="/human-resources/human-resources.html">İnsan Resursları</a>
@@ -173,7 +173,7 @@
 
                 <div class="man-photo">
                     <div style="position: relative;">
-                        <img src="/public/man-photo.svg" alt="" id="profile-pic">
+                        <img src="/public/man-photo.svg" width="315px" height="315px" alt="" id="profile-pic">
                         <div style="position: absolute; bottom: 14px; right: 14px">
                             <div style="display: flex; gap: 5px;">
                                 <label for="change-photo">
@@ -208,10 +208,9 @@
         }
 
         deletePhotoBtn.addEventListener("click", ()=>{
-            profilPic.src="/public/default-profil-photo.png"
+            profilPic.src="/public/man-photo.svg"
             profilPic.style.width="315px"
             profilPic.style.height="315px"
-            profilPic.style.border="1px solid black"
         })
       </script>
 

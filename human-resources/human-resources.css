@@ -129,5 +129,6 @@ select:focus{
     .buttons-div{
         align-self: flex-end;
         bottom: -10px;
+        margin-left: 15px;
     }
 }

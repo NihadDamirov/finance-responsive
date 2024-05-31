@@ -171,7 +171,7 @@ p.user-parametrs-text, p.password-changing-text{
     .man-photo{
         width: 315px;
         height: 315px;
-        margin: 28px 28px 0 0;
+        margin: 0 28px 0 0;
     }
 
     .man-photo img{

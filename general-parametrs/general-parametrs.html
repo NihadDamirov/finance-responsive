@@ -225,33 +225,40 @@
                     <div class="line"></div>
 
                     <div class="new-password-div">
-                        <div style="display: flex; gap: 115px;">
+                        <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 34px;">
                             <div class="labels">
-                                <p>Logo</p>
-                                <p>Dil</p>
+                            <div class="label-div" style="display: flex; justify-content: space-between; width: 460px;">
+                                <label for="">Logo</label>
+                                <div style="display: flex; align-items: center; gap: 15px;">
+                                <button type="button" value="Bax" id="look">Bax</button>
+
+                                <label for="upload-logo">
+                                    <img src="/public/edit-icon.svg" id="edit-icon" alt="">
+                                    <input type="file" name="" id="upload-logo" style="display: none;">
+                                </label>
+                                
+                                <label for="delete-photo">
+                                    <img src="/public/delete-icon.svg" id="delete-icon" alt="">
+                                    <input type="button" value="delete" id="delete-photo" style="display: none;">
+                                </label>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="labels">
+                                <div class="label-div" style="display: flex; width: 460px; justify-content: space-between;">
+                                    <label for="">Dil</label>
+                                    <select>
+                                        <option value="Az">Az</option>
+                                    </select>
+                                </div>
                             </div>
         
                             <div class="inputs">
                                 <div style="display: flex; gap: 15px;">
-                                    <button type="button" value="Bax" id="look">Bax</button>
-                                    <label for="upload-logo">
-                                        <img src="/public/edit-icon.svg" id="edit-icon" alt="">
-                                    </label>
-                                    
-                                    <label for="delete-photo">
-                                        <img src="/public/delete-icon.svg" id="delete-icon" alt="">
-                                    </label>
-
-                                    <input type="button" value="delete" id="delete-photo" style="display: none;">
-                                    <input type="file" name="" id="upload-logo" style="display: none;">
-
                                     <div id="show-logo-img-div" >
                                         <img src="" alt="" id="show-logo-img" style="display: none;">
                                     </div>
                                 </div>
-                                <select>
-                                    <option value="Az">Az</option>
-                                </select>
                             </div>
                             </div>
                     </div>

@@ -90,6 +90,7 @@ tr td{
 .search-comprehensively input{
     width: 234px !important;
     border-bottom: 1px solid#BDBDBD;
+    height: 28px;
 }
 
 input::placeholder{
@@ -143,6 +144,16 @@ ul{
         font-weight: 400;
         color: #BDBDBD;
     }
+}
+
+.x-icon{
+    background: url("/public/close-icon.svg") no-repeat right;
+    background-size: 18px;  
+}
+
+.search-icon{
+    background: url("/public/search-icon.svg") no-repeat right;
+    background-size: 18px;  
 }
 
 
