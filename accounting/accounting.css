@@ -268,7 +268,8 @@ select {
     
 
     .div-color-gray{
-        width: 50px;
+        width: 100%;
+        margin-left: 0;
     }
 
     .last-line-div{

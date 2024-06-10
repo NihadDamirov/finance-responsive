@@ -6,7 +6,6 @@ body{
     display: flex;
     max-width: 1920px;
     margin: 0 auto;
-    position: relative;
 }
 
 .left{
@@ -21,6 +20,7 @@ body{
     background-color: #FCFCFC;
     position: relative;
 }
+
 
 nav{
 
@@ -42,10 +42,10 @@ nav{
 
 
 
+
 .account{
     display: flex;  
     /* width: 80vw; */
-    position: relative;
 }
 
 .profile{
@@ -102,9 +102,10 @@ nav{
     align-items: center;
 }
 
+
 /* nav-js */
 
-.navigation{
+.nav{
     display: none;
     position: absolute;
     top: 73px;
@@ -125,8 +126,29 @@ nav{
     }
 }
 
-.navigation.active{
+.nav.active{
     display: block;
+}
+
+menu{
+    display: none;
+    position: absolute;
+    top: 73px;
+    background-color: white;
+    width: 200px;
+    height: 126px;
+
+    a{
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21.79px;
+        margin-left: 8px;
+        margin-top: 15px;
+    }
 }
 
 .menu.active{
@@ -151,46 +173,6 @@ nav{
     }
 }
 
-#labels{
-
-    label{
-        font-family: Open Sans;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 21.79px;
-        width: 185px;
-        margin-top: 20px;
-    }
-
-    p{
-        font-family: Open Sans;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 21.79px;
-        text-align: left;
-
-    }
-
-    div{
-        align-items: center;
-    }
-
-    input{
-        margin-top: 20px !important;
-        outline: none;
-    }
-
-    select{
-        margin-top: 18px;
-        width: 254px;
-    }
-
-    #contract-status{
-        width: 144.55px;
-        margin: 0 !important;
-    }
-}
-
 .inputs{
     display: block;
     width: 216px;
@@ -198,9 +180,8 @@ nav{
 input{
     border: none;
     border-bottom: 1px solid black;
-    width: 250px;
-    margin-top: 17px !important;
-    background-color: transparent;
+    width: 216px;
+    margin-top: 17px;
     outline: none;
 }
 
@@ -210,7 +191,6 @@ select{
     margin-top: 35px;
     border:none;
     border-bottom: 1px solid black;
-    background-color: transparent;
 }
 
 select:focus{
@@ -218,7 +198,7 @@ select:focus{
 }
 
 .line{
-    width: 250px;
+    width: 216px;
 }
 
 a:is(:link,:active,:visited).active{
@@ -235,19 +215,20 @@ a:is(:link,:active,:visited).active{
 
 /* go-back and save*/
 
+.human-resources-text, .homepage-text{
+    padding-right: 0px;
+}
+
 .buttons-div{
     display: flex;
     gap: 17px;
-    position: absolute;
+    position: fixed;
     margin-top: 60px;
     bottom: 0;
-    top: 915px;
-    right: 28px;
-    overflow: hidden;
 }
 
-.go-back{
-    width: 113px;
+.cancel{
+    width: 97px;
     height: 37px;
     background-color: #98B0C7;
     padding: 9px 25px 9px 25px;
@@ -261,7 +242,7 @@ a:is(:link,:active,:visited).active{
 }
 
 .save{
-    width: 129px;
+    width: 128px;
     height: 37px;
     padding: 9px 25px 9px 25px;
     border-radius: 32px;
@@ -269,8 +250,30 @@ a:is(:link,:active,:visited).active{
     border: none;
     box-shadow: -1px 1px 2px 0px #00000080;
     color: #fff;
-
 }
+
+.clear{
+    width: 101px;
+    height: 37px;
+    padding: 9px 25px 9px 25px;
+    border-radius: 32px;
+    background-color: #EFBF3A;
+    border: none;
+    box-shadow: -1px 1px 2px 0px #00000080;
+    color: #fff;
+}
+
+.go-to-contract, .go-back{
+    width: 150px;
+    height: 37px;
+    padding: 9px 25px 9px 25px;
+    border-radius: 32px;
+    border: none;
+    box-shadow: -1px 1px 2px 0px #00000080;
+    color: #fff;
+    background-color:#094C89;
+}
+
 
 button:hover{
     cursor: pointer;
@@ -288,6 +291,10 @@ button:hover{
     justify-content: space-between;
 }
 
+.form{
+    margin: 28px 0 0 28px
+}
+
 
 .user-parametrs, .password-changing{
     display: flex;
@@ -303,18 +310,6 @@ font-weight: 700;
 
 #edit-icon, #delete-icon{
     cursor: pointer;
-}
-
-.hamburger-icon-div{
-    display: none;
-}
-
-#hamburger-icon{
-    cursor: pointer;
-}
-
-.none{
-    display: none;
 }
 
 .navbar{
@@ -338,10 +333,6 @@ font-weight: 700;
     }
 }
 
-.navbar{
-    visibility: hidden;
-}
-
 @media only screen and (max-width: 1050px) {
     .menu{
         display: none;
@@ -357,19 +348,32 @@ font-weight: 700;
     .buttons-div{
         width: 100%;
     }
-    .left{
-        display: none;
+
+    .account-parametrs-text{
+        width: fit-content;
     }
+
+    .account{
+        justify-content:space-between;
+        gap: 50px !important;
+    }
+
+
     .form{
         display: flex;
         flex-direction: column;
         align-items: center;
-        /* width: 100%; */
+        width: 100%;
     }
     
     .labels{
         margin-left:-36px;
     }
+
+    #name-surname{
+        width: 100%;
+    }
+
     .relations, .new-password-div{
         margin-left: 36px;
     }
@@ -378,33 +382,16 @@ font-weight: 700;
         width: 100%;
         justify-content: center;
         left: 50%;
-        transform: translateX(-50%)
+        transform: translate(-50%, 100%);
+        margin-top: 20px;
     }
 
     #form{
         flex-direction: column;
     }
 
-    .accounting-tables{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .red-circle-div{
-        flex-direction: row !important;
-        gap: 55px;
-        align-items: start;
-    }
-    .account-parametrs-text{
-        width: fit-content;
-    }
-    .account{
-        justify-content:space-between;
-        gap: 50px !important;
-    }
-
-    .div-color{
-        overflow-x: hidden;
+    .left{
+        display: none;
     }
 
     .right{
@@ -413,9 +400,12 @@ font-weight: 700;
         margin:  0 auto;
     }
 
-    .hamburger-icon-div, .navbar{
+    .hamburger-icon-div{
         display: flex; 
+    }
+
+    .hamburger-icon-div, .navbar{
+        display: flex;
         visibility: visible;
     }
 }
-

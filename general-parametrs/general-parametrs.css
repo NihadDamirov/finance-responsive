@@ -67,6 +67,14 @@ select:focus{
     margin-top: 28px;
 }
 
+.general-parametrs-text{
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: left;
+}
+
 #look{
     width: 109px;
     height: 21px;
@@ -153,5 +161,9 @@ select:focus{
         display: flex;
         transform: translateX(-45%);
         padding-bottom: 20px;
+    }
+    .form-div{
+        height: 1080px;
+        justify-content: flex-start;
     }
 }

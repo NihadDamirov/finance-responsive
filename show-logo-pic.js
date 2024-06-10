@@ -10,6 +10,7 @@ uploadLogoInput.addEventListener("change",()=>{
 lookBtn.addEventListener("click", ()=>{
 
     logoImg.style.display="block"
+  
 })
 
 deletePhotoBtn.addEventListener("click", ()=>{

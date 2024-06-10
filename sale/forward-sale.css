@@ -1,0 +1,354 @@
+p{
+    font-weight: 700;
+    color: black;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+.line{
+    width: 315px !important;
+    height: 1px;
+    background-color: #BDBDBD !important;
+}
+
+.first-type, .second-type, .third-type, .fourth-type{
+    margin-top: 28px;
+    display: flex;
+    text-align: left;
+    gap: 7px;
+}
+
+.second-type, .third-type, .fourth-type{
+    margin-top: 16px;
+}
+
+.contract-types {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info{
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cash-info{
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cash-info label{
+    margin-left: 23px;
+    width: 117px;
+}
+
+.cash-info input{
+    margin-left: 61px;
+    background-color: #FCFCFC;
+    width: 95px;
+}
+
+.first-info, .second-info ,.third-info, .fourth-info, .fifth-info{
+    display: flex;
+    text-align: left;
+}
+
+.second-info, .third-info, .fourth-info, .fifth-info{
+    margin-top: 17px;
+}
+
+.first-cash-info, .second-cash-info, .third-cash-info{
+    display: flex;
+    text-align: left;
+}
+
+.cash-info p{
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 23px;
+    color: #BDBDBD;
+}
+
+.contract-info{
+    margin-top: 33px;
+}
+
+.contract-info input{
+    background-color: #FCFCFC;
+    margin-top: 0 !important;
+}
+
+.contract-info div{
+    display: flex;
+    align-items: center;
+}
+
+.second-contract-info, .third-contract-info , .fourth-contract-info, .fifth-contract-info,
+ .sixth-contract-info, .seventh-contract-info, .eight-contract-info, .nine-contract-info,
+ .ten-contract-info, .eleven-contract-info, .twelfe-contract-info, .thirdteen-contract-info,
+ .fourteen-contract-info
+ {
+    margin-top: 15px;
+}
+
+.contract-info label{
+    font-size: 18px;
+    font-family: 'Segoe UI';
+}
+
+
+.cash-info button{
+    width: 84px;
+    height: 25px;
+    border-radius: 32px;
+    padding: 9px, 28px, 9px, 28px;
+    background-color: #BDBDBD;
+    box-shadow: -1px 1px 2px 0px #00000080;
+    border: none;
+    color: white;
+    margin-left: 61px;
+}
+
+.user-info label{
+    width: 78px;
+}
+
+.contract-types label{
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Segoe UI';
+}
+
+.list_btn, .accept_btn{
+    width: 84px;
+    height: 25px;
+    margin-left: 30px;
+    border-radius: 32px;
+    border: none;
+    background-color: #073763;
+    color: white;
+    box-shadow: -1px 1px 2px 0px #00000080;
+    text-align: center;
+}
+
+.go-back{
+    width: 119px !important;
+    height: 37px !important;
+    background-color: #98B0C7 !important;
+}
+
+.decline, .month_btn, .accept{
+    width: 115px;
+    height: 37px;
+    background-color: #F44336;
+    border-radius: 32px;
+    border: none;
+    color: white;
+    box-shadow: -1px 1px 2px 0px #00000080;
+}
+
+.add-investor{
+    background-color: #094C89 !important;
+    color: white;
+    width: 164px !important;
+    height: 34px !important;
+    margin-top: 14px !important;
+    margin-left: 14px !important;
+}
+
+.note{
+    resize: none;
+    margin-top: 35px;
+    height: 150px;
+    width: 516px;
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+}
+
+.read-and-accepted p{
+    margin-left: 28px !important;
+}
+
+
+.modal-content {
+    background: white;
+    border-radius: 10px;
+    z-index: 99;
+    width: 602px;
+    height: 294px;
+    position: fixed;
+    top: 50%;
+    left: 58%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.second-modal-content{
+    background: white;
+    border-radius: 10px;
+    z-index: 99;
+    width: 571px;
+    height: 504px;
+    position: fixed;
+    top: 50%;
+    left: 58%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.third-modal-content{
+    background: white;
+    border-radius: 10px;
+    z-index: 99;
+    width: 394px;
+    height: 360px;
+    position: fixed;
+    top: 50%;
+    left: 58%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.hidden-modal { 
+   display: none; 
+}
+
+.blur-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+}
+
+.hidden-blur {
+    display: none;
+}
+
+table, th, td {
+    border: 1px solid  #BCBCBC;
+    border-collapse: collapse;
+    text-align: center;
+  }
+
+.first-table{
+    width: 574px;
+    height: 266px;
+    margin: 14px;
+    border-radius: 5px;
+}
+
+.second-table{
+    width: 543px;
+    height: 425px;
+    margin: 14px;
+}
+
+.modal-text{
+    margin-top: 50px;
+}
+
+th{
+    background-color: #073763;
+    color: white;
+}
+
+
+.modal-name{
+    margin-top: 66px;
+}
+
+.modal-amount{
+    margin-top: 40px;
+}
+
+.modal-buttons{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    gap: 21px;
+    bottom: 25px;
+    left: 135px;
+}
+
+.modal-buttons button{
+    width: 105px;
+    height: 37px;
+    border-radius: 32px;
+    border: none;
+    font-family: 'Segoe UI';
+    color: white;
+    box-shadow: -1px 1px 2px 0px #00000080;
+}
+
+.modal-name label{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Open Sans;
+    margin-right: 70px;
+}
+
+.modal-amount label{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: Open Sans;
+    margin-right: 28px;
+}
+
+.modal-name input{
+    width: 140px;
+}
+
+.modal-amount input{
+    width: 140px;
+}
+
+.hamburger-icon-div{
+    visibility: hidden;
+}
+
+.navbar{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1050px) {
+
+    .name-surname{
+        text-align: center;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .modal-content, .second-modal-content, .third-modal-content{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .hamburger-icon-div{
+        display: flex;
+        visibility: visible;
+    }
+
+    .note{
+        margin-bottom: 20px;
+    }
+}

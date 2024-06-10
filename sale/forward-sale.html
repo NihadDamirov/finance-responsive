@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forward-sale.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/global2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="menu">
+                <div>
+                    <h1 class="logo-text">Logo</h1>
+                </div>
+        
+                <div>
+                  <nav>
+                    <a href="/homepage/homepage.html" class="homepage-text"><img src="/public/home-page-icon.png" alt="" > Ana Səhifə</a>
+                    <a href="/human-resources/human-resources.html" class="human-resources-text"><img src="/public/resources-icon.png" alt="">İnsan Resursları</a>
+                    <a href="/sale/sale-contracts/sale-contracts.html"><img src="/public/sale-icon.png" alt="">Satışlar</a>
+                    <a href="/accounting/accounting.html"><img src="/public/accounting-icon.png" alt="">Mühasibat</a>
+                    <a href="/statistic/statistic.html"><img src="/public/statistics.png" alt="">Statistika</a>
+                    <a href="/exercises/exercises.html"><img src="/public/exercises-icon.png" alt="">Tapşırıqlar</a>
+                </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="account">
+                <div class="hamburger-icon-div" style="align-items: center; justify-content: center; margin-left: 28px;">
+                    <i class="fa-solid fa-bars fa-xl" id="hamburger-icon"></i>
+                </div>
+                <div class="account-parametrs-text">
+                    <p style="margin-bottom: 18px;">Satışlar / Vədəli satış müqaviləsi</p>
+                </div>
+
+                <div class="profile">
+                    <img src="/public/profile-photo.svg" id="profile-photo" alt="">
+                    <p style="display: flex; gap: 10px; width: 150px; margin-bottom: 18px;" id="profile-name">Əliyev Fərid <img src="/public/profile-photo-vector.svg" alt=""></p>
+            
+                    <div class="nav" id="menu" style="z-index: 1;">
+                            <a href="">Hesab parametrləri</a>
+                            <a href="/general-parametrs/general-parametrs.html">Ümumi parametrlər</a>
+                            <a href="">Hesabdan çıxış</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="div-color"></div>
+
+            <div class="navbar" style="display: none; flex-direction: column;z-index: 9;">
+                <div style="display: flex; flex-direction: column;">
+                    <a href="/homepage/homepage.html">Ana Səhifə</a>
+                    <a href="/human-resources/human-resources.html">İnsan Resursları</a>
+                    <a href="/sale/sales.html">Satışlar</a>
+                    <a href="/accounting/accounting.html">Mühasibat</a>
+                    <a href="#">Statistika</a>
+                    <a href="#">Tapşırıqlar</a>
+                </div>
+            </div>
+
+            <div class="container2" style="display: flex; gap: 157px;">
+                <div class="form" style="width: fit-content; justify-content: space-between; align-items: start;">
+                    <p>Müqavilə növü</p>
+                    <div class="line"></div>
+                    <div class="contract-types">
+                        <div class="first-type">
+                            <button id="forward" style="background-color: #fcfcfc; border: none; ">
+                            <a href="./forward-sale.html">
+                                <img id="forward-image" src="/public/circle-dot.svg" style="width: 20px; height: 20px;"> 
+                            </a>
+                            </button>
+                            <label>Vədəli satış</label>
+                        </div>
+                        <div class="second-type">
+                            <button id="murabaha" style="background-color: #fcfcfc; border: none; ">
+                                <img id="murabaha-image" src="/public/select.svg">
+                            </button>
+                            <label>Mürabəhə</label>
+                        </div>
+                        <div class="third-type">
+                            <button id="muzaraba"  style="background-color: #fcfcfc; border: none; ">
+                                <img id="muzaraba-image" src="/public/select.svg">
+                            </button>
+                            <label>Müzarəbə</label>
+                        </div>
+                        <div class="fourth-type">
+                            <button id="musaraka" style="background-color: #fcfcfc; border: none; ">
+                                <img src="/public/select.svg">
+                            </button>
+                            <label>Müşarəkə</label>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 82px;">Müştəri məlumatları</p>
+                    <div class="line"></div>
+
+                    <div class="user-info">
+                        <div class="first-info">
+                            <label>Müştəri</label>
+                            <select style="margin-top: 0; margin-left: 91px; width: 145px; font-size: 16px;">
+                                <option value="" disabled selected>Nicat Yusifov</option>
+                            </select>
+                        </div>
+                        <div class="second-info">
+                            <label style="width: 116px;">Müştəri tel</label>
+                            <select style="margin-top: 0; margin-left: 53px; width: 145px; font-size: 16px;">
+                                <option value="" disabled selected>0703324322</option>
+                            </select>
+                        </div>
+                        <div class="third-info">
+                            <label style="width: 79px;">Ünvan</label>
+                            <select style="margin-top: 0; margin-left: 90px; width: 145px; font-size: 16px;">
+                                <option value="" disabled selected>Bagbanlar</option>
+                            </select>
+                        </div>
+                        <div class="fourth-info">
+                            <label style="width: 79px;">Kəfil</label>
+                            <select style="margin-top: 0; margin-left: 90px; width: 145px; font-size: 16px;">
+                                <option value="" disabled selected>Vüsal Əliyev</option>
+                            </select>
+                        </div>
+                        <div class="fifth-info">
+                            <label style="width: 79px;">Kəfil tel</label>
+                            <select style="margin-top: 0; margin-left: 90px; width: 145px; font-size: 16px;">
+                                <option value="" disabled selected>0556552212</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 82px;">Kassa məlumatları</p>
+                    <div class="line" style="width: 488px !important; "></div>
+                    
+                    <div class="cash-info">
+                        <div class="first-cash-info" style="display: flex; align-items: center;">
+                            <img src="/public/checkout.svg">
+                            <label>Şirkət</label>
+                            <input style="margin-top: 0 !important;">
+                            <p>Sərmayə (₼): 1500</p>
+                        </div>
+                        <div class="second-cash-info" style="display: flex; align-items: center;">
+                            <img src="/public/checkout.svg">
+                            <label>Hövzə</label>
+                            <button class="open-modal">Siyahı</button>
+
+                            <div class="modal-content hidden-modal">                        
+                                <div class="modal-body">
+                                    <table class="first-table">
+                                        <tr>
+                                          <th>Hövzə</th>
+                                          <th>Məbləğ</th>
+                                          <th>Hissə %-i</th>
+                                        </tr>
+                                        <tr>
+                                          <td>January</td>
+                                          <td>$100</td>
+                                          <td>January</td>
+                                        </tr>
+                                        <tr>
+                                          <td>February</td>
+                                          <td>$80</td>
+                                          <td>January</td>
+                                        </tr>
+                                        <tr>
+                                            <td>February</td>
+                                            <td>$80</td>
+                                            <td>January</td>
+                                        </tr>
+                                        <tr>
+                                            <td>February</td>
+                                            <td>$80</td>
+                                            <td>January</td>
+                                        </tr>
+                                      </table>
+                                </div>
+                            </div>
+                        
+                            <div class="blur-bg hidden-blur"></div>
+
+                            <p style="margin-left: 38px;">Sərmayə (₼): 5000</p>
+                        </div>
+                        <div class="third-cash-info" style="display: flex; align-items: center; height: 42px;">
+                            <img src="/public/empty-checkout.svg">
+                            <label>İnvestor</label>
+                            <button class="open-second-modal">Siyahı</button>
+
+                            <div class="second-modal-content hidden-modal">                        
+                                <div class="modal-body">
+                                    <button class="add-investor open-third-modal">İnvestor əlavə et</button>
+                                    <table class="second-table">
+                                        <tr>
+                                          <th>Hövzə</th>
+                                          <th>Məbləğ</th>
+                                          <th>Hissə %-i</th>
+                                        </tr>
+                                        <tr>
+                                          <td>January</td>
+                                          <td>$100</td>
+                                          <td>January</td>
+                                        </tr>
+                                        <tr>
+                                          <td>February</td>
+                                          <td>$80</td>
+                                          <td>January</td>
+                                        </tr>
+                                        <tr>
+                                            <td>February</td>
+                                            <td>$80</td>
+                                            <td>January</td>
+                                        </tr>
+                                        <tr>
+                                            <td>February</td>
+                                            <td>$80</td>
+                                            <td>January</td>
+                                        </tr>
+                                        <tr>
+                                            <td>February</td>
+                                            <td>$80</td>
+                                            <td>January</td>
+                                        </tr>
+                                        <tr>
+                                            <td>February</td>
+                                            <td>$80</td>
+                                            <td>January</td>
+                                        </tr>
+                                        <tr>
+                                            <td>February</td>
+                                            <td>$80</td>
+                                            <td>January</td>
+                                        </tr>
+                                      </table>
+                                </div>
+                            </div>
+                        
+                            <div class="blur-bg hidden-blur"></div>                            
+
+                            <p style="margin-left: 38px;">Sərmayə (₼): 5000</p>
+                        </div>
+                        <div class="fourt-cash-info" style="display: flex;">
+                            <p style="font-size: 18px; margin: 0;">Sərmayə payı%</p>
+                            <input style="margin-top: 0px !important; margin-left: 100px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="form" style="width: fit-content; float: left; margin-left: 0px;">
+                    <p style="margin-top: 18px;">Müqavilə məlumatları</p>
+                    <div class="line" style="width: 488px !important; "></div>
+
+                    <div class="third-modal-content hidden-modal">                        
+                        <div class="modal-body" style="display: flex; justify-content: center;">
+                            <p class="modal-text">İnvestor əlavə et</p>
+                        </div>
+                        <div class="modal-name" style="display: flex; align-items: center; justify-content: center;">
+                            <label>Ad</label>
+                            <input style="margin: 0 !important;">
+                        </div>
+                        <div class="modal-amount" style="display: flex; align-items: center; justify-content: center;">
+                            <label>Məbləğ</label>
+                            <input style="margin: 0 !important;">
+                        </div>
+                        <div class="modal-buttons">
+                            <button style="background-color: #98B0C7;" class="decline-btn">İmtina et</button>
+                            <button style="background-color: #21D25C;">Əlavə et</button>
+                        </div>
+                    </div>
+                
+                    <div class="blur-bg hidden-blur"></div>   
+
+                    <div class="contract-info" style="left: 0;">
+                        <div class="first-contract-info">
+                            <label>Müqavilə tarixi</label>
+                            <img src="/public/calendar.svg" style="margin-left: 85px;">
+                        </div>
+
+                        <div class="second-contract-info">
+                            <label>Məhsul adı*</label>
+                            <input style="width: 200px; margin-left: 20px;">
+                            <img src="/public/add-picture.svg" style="margin-left: 30px;">
+                        </div>
+
+                        <div class="third-contract-info">
+                            <label style="width: 181px;">Miqdarı</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>
+
+                        <div class="fourth-contract-info">
+                            <label style="width: 181px;">Məhsulun qiyməti (₼)*</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>
+
+                        <div class="fifth-contract-info">
+                            <label style="width: 181px;">Xərc (₼)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                            <button class="list_btn">Siyahı</button>
+                        </div>
+
+                        <div class="sixth-contract-info">
+                            <label style="width: 181px;">Kredit müddəti (Ay)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>
+
+                        <div class="seventh-contract-info">
+                            <label style="width: 181px;">İlkin ödəniş (₼)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>
+
+                        <div class="eight-contract-info">
+                            <label style="width: 181px; font-weight: 800;">Cəmi sərmayə (₼)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                            <button class="accept_btn" style="width: 90px; background-color: #21D25C;">Təsdiqlə</button>
+                        </div>
+
+                        <div class="nine-contract-info">
+                            <label style="width: 181px;">Min. Aylıq Ödəniş (₼)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>
+
+                        <div class="ten-contract-info">
+                            <label style="width: 181px;">Əlavə mənfəət (₼)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>
+
+                        <div class="eleven-contract-info">
+                            <label style="width: 181px;">Komissyon (₼)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>
+
+                        <div class="twelfe-contract-info">
+                            <label style="width: 181px; color:#BDBDBD;">İllik mənfəət (%)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>
+
+                        <div class="thirdteen-contract-info">
+                            <label style="width: 181px;">Yekun məbləğ (₼)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>
+
+                        <div class="fourteen-contract-info">
+                            <label style="width: 181px; color:#4CAF50;">Yekun aylıq ödəniş (₼)</label>
+                            <input style="width: 95px; margin-left: 38px;">
+                        </div>   
+                        
+                        <textarea class="note">
+                        </textarea>
+
+                        <div class="read-and-accepted" style="position:absolute; top: 965px; margin-top: 60px;">
+                            <img src="/public/empty-checkout.svg">
+                            <p style="margin: 0;">Şərtləri oxudum və qəbul etdim</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>    
+
+
+            <div class="buttons-div" style="position: absolute; right: 28px;">
+                <a href="./sale-contracts/sale-contracts.html">
+                    <button class="go-back">Geri qayıt</button>
+                </a>
+                <button class="decline">İmtina et</button>
+                <button class="month_btn" style="width: 125px; background-color:#094C89;">Aylara bax</button>
+                <button class="accept" style="width: 112px; background-color: #21D25C;">Təsdiq et</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        let modalContent = document.querySelector(".modal-content");
+        let secondModalContent = document.querySelector(".second-modal-content");
+        let thirdModalContent = document.querySelector(".third-modal-content");
+        let openModal = document.querySelector(".open-modal");
+        let openSecondModal = document.querySelector(".open-second-modal");
+        let openThirdModal = document.querySelector(".open-third-modal")
+        let blurBg = document.querySelector(".blur-bg");
+        let declineButton = document.querySelector(".decline-btn")
+
+        openModal.addEventListener("click", function () {
+        modalContent.classList.remove("hidden-modal");
+        blurBg.classList.remove("hidden-blur");});
+
+        openSecondModal.addEventListener("click", function () {
+        secondModalContent.classList.remove("hidden-modal");
+        blurBg.classList.remove("hidden-blur");});
+
+        openThirdModal.addEventListener("click", function () {
+        secondModalContent.classList.add("hidden-modal");
+        thirdModalContent.classList.remove("hidden-modal");
+        blurBg.classList.remove("hidden-blur");
+        });
+
+        let closeModalFunction = function () {
+        modalContent.classList.add("hidden-modal")
+        secondModalContent.classList.add("hidden-modal")
+        thirdModalContent.classList.add("hidden-modal")
+        blurBg.classList.add("hidden-blur");   
+        }
+
+        blurBg.addEventListener("click", closeModalFunction);
+        declineButton.addEventListener("click", closeModalFunction);
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape"
+            && !modalContent.classList.contains("hidden")
+        ) {
+            closeModalFunction();
+            }
+        });
+      </script>
+      
+      <script src="/contracts.js"></script>
+      <script src="/show-menu.js"></script>
+      <script src="/app.js"></script>
+      <script src="/nav.js"></script>
+</body>
+</html>

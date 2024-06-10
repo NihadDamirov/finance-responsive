@@ -1,0 +1,263 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sale-container{
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.sale-left{
+    width: 315px;
+    height: 1080px;
+    background-color: #073763;
+}
+
+.sale-right{
+    width: 1605px;
+    background-color: #FCFCFC;
+    position: relative;
+}
+
+.logo-text{
+    font-size: 48.32px;
+    font-weight: 400;
+    color: white;
+    margin-left: 28px;
+    margin-bottom: 25px;
+}
+
+.project{
+    display: flex;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+body{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-user{
+        margin-bottom: 20px;
+}
+
+.add-user__btn{
+    width: 155px;
+    height: 37px;
+    border-radius: 32px;
+    background-color:  #25619A;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 20px;
+}
+
+.card {
+    border-radius: 10px;
+    background: #25619A;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 294px;
+    height: 154px;
+  }
+
+  .first-line {
+    margin-bottom: 5px;
+  }
+
+ .second-line {
+    margin-bottom: 14px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #FFFFFF;
+  }
+
+.third-line {
+  margin-bottom: 5px;
+  display: flex;
+}
+
+ .ellipse-2 {
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background: #4CAF50;
+    margin-bottom: 12px;
+    width: 10px;
+    height: 10px;
+    float: right;
+  }
+
+ .card-name {
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+
+  .line-text {
+    font-family: 'Open Sans';
+    font-weight: 600px;
+    font-size: 12px;
+    color: #FFFFFF;
+  }
+
+ .rating{
+    display: flex;
+ } 
+
+ .star-img{
+    margin: 1px 5px 3px 0;
+    width: 12px;
+    height: 12px;
+ }
+
+ .rating-number{
+    font-family: 'Open Sans';
+    font-size: 12px;
+    color: #FFFFFF;
+ }
+
+.fourth-line {
+  display: flex;
+  }
+
+ .fifth-line{
+    display: flex;
+    margin-top: 5px;
+  }
+
+  .card-container{
+    display: flex;
+  }
+
+.right-container{
+    box-shadow: -5px 0px 15px 5px rgba(0, 0, 0, 0.05);
+    background: #FFFFFF;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 35px 26px 635px 24px;
+    width: 290px;
+    height: 980px;
+    box-sizing: border-box;
+    float: right;
+  }
+
+  .right-header {
+    margin: 0 0 44px 17.3px;
+    align-self: center;
+    font-weight: 700;
+    font-size:  22px;
+    color:  #000000;
+  }
+
+  .right-container input{
+    font-family:  'Open Sans';
+    border: none;
+    border-bottom: 1px solid #BDBDBD;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    width: 238px;
+  }
+
+  ::-webkit-input-placeholder{
+    color: #BDBDBD;
+  }
+
+  #select-status{
+    border: 1px solid #BDBDBD;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-top: 22px;
+    width: 245px;
+    height: 30px;
+    color: #BDBDBD;
+  }
+
+  #select-status:focus{
+    color: #BDBDBD;
+  }
+
+
+.clear{
+    margin-top: 22px;
+    float: right;
+    box-shadow: -1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    background: #EFBF3A;
+    padding: 9px 1px 9px 0;
+    width: 121px;
+    border: none;
+    color: #FFFFFF;
+}
+
+.all-pages{
+    font-size: 18px;
+}
+
+.all-pages p{
+    display: inline;
+}
+
+.shown-pages{
+    font-size: 18px;
+    margin-left: 28px;
+}
+
+.shown-pages p{
+    display: inline;
+}
+
+.page-navigation{
+    display: flex;
+    margin-top: 20px;
+}
+
+.change-pages{
+    margin-top: 20px;
+}
+
+.pages button{
+    width: 42px;
+    height: 42px; 
+    border: 1px solid #00000033;
+    margin-right: 11px;
+    border-radius: 4px;
+    font-family: 'Open Sans';
+    color: #07376359;
+}
+
+.hamburger-icon-div{
+  visibility: hidden;
+}
+
+.navbar{
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 1050px) {
+  .left{
+    display: none;
+  }
+
+  .card-group{
+    flex-direction: column;
+    justify-content: center;
+    width: fit-content;
+  }
+
+  .hamburger-icon-div{
+    display: flex;
+    visibility: visible;
+  }
+
+  .right-container{
+    float: none;
+    width: fit-content;
+    margin: 0;
+    justify-content: center;
+  }  
+}

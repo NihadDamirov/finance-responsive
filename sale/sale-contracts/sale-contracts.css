@@ -168,6 +168,10 @@ ul{
         font-size: 14px;
     }
 
+    .div-color-gray{
+        margin-left: -14px;
+        margin-bottom: -20px;
+    }
     #name-surname{
         /* width: 100%; */
         margin-left: 0;
@@ -182,6 +186,14 @@ ul{
             width: 21px;
             height: 21px;
         }
+    }
+
+    th{
+        padding: 15px;
+    }
+
+    .table{
+        margin-left: 0 ;
     }
 
 }

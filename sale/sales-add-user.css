@@ -1,0 +1,150 @@
+p{
+    font-weight: 700;
+    color: black;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.user-info{
+    margin-top: 30px;
+    font-weight: 400;
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.first-info, .second-info ,.third-info, .fourth-info, .fifth-info, .sixth-info, .seventh-info{
+    display: flex;
+    text-align: left;
+}
+
+.second-info, .third-info, .fourth-info, .fifth-info, .sixth-info, .seventh-info{
+    margin-top: 28px;
+}
+
+.passport-info{
+    margin-top: 34px;
+    display: flex;
+    text-align: center;
+}
+
+.install_btn{
+    margin-left: 68px;
+    width: 91px;
+    height: 32px;
+    border-radius: 32px;
+    border: none;
+    background-color: #094C89;
+    color: white;
+    box-shadow: -1px 1px 2px 0px #00000080;
+    font-size: 16px;
+}
+
+.worker{
+    margin-top: 34px;
+    display: flex;
+    align-items: center;
+    gap: 177px;
+}
+
+#note{
+    width: 427px;
+    height: 193px;
+    margin-top: 120px;
+    resize: none;
+    border: 1px solid #BFBFBF;
+    border-radius: 5px;
+}
+
+select{
+    background-color: #FCFCFC;
+    margin-top: 0 !important;
+}
+
+.user-info label{
+    width: 78px;
+}
+
+.read-and-accepted p{
+    margin-left: 28px !important;
+}
+
+input::placeholder{
+    font-size: 24px;
+}
+
+.name-surname{
+    margin-top: 0px !important;
+    font-size: 24px;
+    background-color:#FCFCFC;
+}
+
+.user-info label{
+    font-weight: 700;
+    width: 120px; 
+}
+
+.user-info input{
+    margin-top: 0 !important;
+    background-color: #FCFCFC;
+    margin-left: 91px;
+}
+
+.img-upload{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+    height: 315px;
+    border: 1px solid black;
+    position: relative;
+    margin: 0px 28px 0 0;
+}
+
+.upload-photo-icon{
+    position: absolute;
+    bottom: 0;
+    right: 8px
+}
+
+.hamburger-icon-div{
+    visibility: hidden;
+}
+
+.navbar{
+    visibility: hidden;
+}
+
+@media only screen and (max-width: 1050px) {
+
+
+    .name-surname{
+        text-align: center;
+    }
+
+    .user-info{
+        display: flex;
+    }
+
+    #form2{
+        display: flex;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hamburger-icon-div{
+        display: flex;
+        visibility: visible;
+    }
+
+    .img-upload{
+        margin-bottom: 20px;
+    }
+} 

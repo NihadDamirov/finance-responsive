@@ -21,7 +21,7 @@
                     <nav>
                         <a href="/homepage/homepage.html"><img src="/public/home-page-icon.png" alt="" > Ana Səhifə</a>
                         <a href="/human-resources/human-resources.html"><img src="/public/resources-icon.png" alt="">İnsan Resursları</a>
-                        <a href="/sale/sales.html"><img src="/public/sale-icon.png" alt="">Satışlar</a>
+                        <a href="/sale/sale-contracts/sale-contracts.html"><img src="/public/sale-icon.png" alt="">Satışlar</a>
                         <a href="/accounting/accounting.html"><img src="/public/accounting-icon.png" alt="">Mühasibat</a>
                         <a href="/statistic/statistic.html"><img src="/public/statistics.png" alt="">Statistika</a>
                         <a href="/exercises/exercises.html"><img src="/public/exercises-icon.png" alt="">Tapşırıqlar</a>
@@ -55,7 +55,7 @@
 
             <div class="div-color"></div>
 
-            <div class="navbar" style="flex-direction: column;z-index: 9;">
+            <div class="navbar" style="display: none; flex-direction: column;z-index: 9;">
                 <div style="display: flex; flex-direction: column;">
                     <a href="/homepage/homepage.html">Ana Səhifə</a>
                     <a href="/human-resources/human-resources.html">İnsan Resursları</a>
@@ -131,49 +131,9 @@
                           </div>
                         </div>
 
-                    <!-- <div class="labels">
-                        <label>Ad Soyad Ata ad</label>
-                        <label>İstifadəçi Adı</label>
-                        <label>Tel.nömrəsi 1</label>
-                        <label>Tel.nömrəsi 2</label>
-                        <label>E-poçt</label>
-                    </div>
-
-                    <div class="inputs">
-                        <input type="text" placeholder="Əliyev Fərid Kərim" >
-                        <input type="text" placeholder="farid_02">
-                        <input type="number" placeholder="+994702545666">
-                        <input type="text" placeholder="+994772215646">
-                        <input type="text" placeholder="aliyef_farid@gmail.com">
-                    </div>
-                    </div>
-
-                    <div class="password-changing">
-                        <img src="/public/password-change.svg" alt="">
-                        <p class="password-changing-text">Şifrə dəyişmək</p>
-                    </div>
-
-                    <div class="line"></div>
-
-                    <div>
-                        <div style="display: flex; gap: 115px;" class="new-password">
-                            <div class="labels">
-                                <label>Yeni şifrə</label>
-                                <label>Yeni şifrəni təkrarla</label>
-                            </div>
-        
-                            <div class="inputs">
-                                <input type="password" >
-                                <input type="password" >
-                            </div>
-                            </div>
-                    </div> -->
-
-
-
                 <div class="man-photo">
                     <div style="position: relative;">
-                        <img src="/public/man-photo.svg" width="315px" height="315px" alt="" id="profile-pic">
+                        <img src="/public/man-photo.svg" alt="" id="profile-pic">
                         <div style="position: absolute; bottom: 14px; right: 14px">
                             <div style="display: flex; gap: 5px;">
                                 <label for="change-photo">
@@ -205,12 +165,16 @@
         
         inputChangePhoto.onchange = function(){
           profilPic.src=URL.createObjectURL(inputChangePhoto.files[0])
+          profilPic.style.width="315px"
+          profilPic.style.height="315px"
+          profilPic.style.border="1px solid black"
         }
 
         deletePhotoBtn.addEventListener("click", ()=>{
-            profilPic.src="/public/man-photo.svg"
+            profilPic.src=""
             profilPic.style.width="315px"
             profilPic.style.height="315px"
+            profilPic.style.border="1px solid black"
         })
       </script>
 
